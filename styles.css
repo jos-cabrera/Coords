@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --ball-size: 150px;
+  --main-color: #e65151;
+}
+
+.coordinates {
+  user-select: none;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.ball {
+  background-color: var(--main-color);
+
+  width: var(--ball-size);
+  height: var(--ball-size);
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ball .text {
+  user-select: none;
+  font-size: 18px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
